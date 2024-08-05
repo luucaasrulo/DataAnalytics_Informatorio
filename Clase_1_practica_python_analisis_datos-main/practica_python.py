@@ -10,45 +10,45 @@
         - Convierte la lista en una tupla de tuplas.
 '''
 
-# # # Lista de productos y cantidades
-# # inventario = [("Manzanas", 50), ("Bananas", 30), ("Naranjas", 40), ("Peras", 25), ("Uvas", 60)]
+# Lista de productos y cantidades
+inventario = [("Manzanas", 50), ("Bananas", 30), ("Naranjas", 40), ("Peras", 25), ("Uvas", 60)]
 
-# # # Agregar un nuevo producto
-# # nuevo_produto = ("Kiwi", 20)
+# Agregar un nuevo producto
+nuevo_produto = ("Kiwi", 20)
 
-# # inventario.append(nuevo_produto)
+inventario.append(nuevo_produto)
 
-# # # Encuentra e imprime el producto con la mayor cantidad disponible.
-# # producto_max = max(inventario, key=lambda x: x[1])
-# # print(f'Producto con mayor cantidad: {producto_max[0]} ({producto_max[1]} unidades)')
+# Encuentra e imprime el producto con la mayor cantidad disponible.
+producto_max = max(inventario, key=lambda x: x[1])
+print(f'Producto con mayor cantidad: {producto_max[0]} ({producto_max[1]} unidades)')
 
-# # # Convierte la lista en una tupla de tuplas.
-# # inventario_tupla = tuple(inventario)
-# # print(f'Inventario (tupla): {inventario_tupla}')
+# Convierte la lista en una tupla de tuplas.
+inventario_tupla = tuple(inventario)
+print(f'Inventario (tupla): {inventario_tupla}')
 
 
-# # '''
-# # Ejercicio: Sistema de Calificaciones
+'''
+Ejercicio: Sistema de Calificaciones
 
-# #     Crea un diccionario con los nombres de tres estudiantes y sus respectivas calificaciones.
-# #     Agrega un nuevo estudiante y su calificación.
-# #     Calcula e imprime el promedio de las calificaciones.
-# #     Encuentra e imprime el estudiante con la calificación más alta.
-# # '''
+    Crea un diccionario con los nombres de tres estudiantes y sus respectivas calificaciones.
+    Agrega un nuevo estudiante y su calificación.
+    Calcula e imprime el promedio de las calificaciones.
+    Encuentra e imprime el estudiante con la calificación más alta.
+'''
 
-# # # Diccionario de estudiantes y calificaciones
-# # estudiantes = {"Ana": 85, "Juan": 92, "Maria": 78}
+# Diccionario de estudiantes y calificaciones
+estudiantes = {"Ana": 85, "Juan": 92, "Maria": 78}
 
-# # # Agregar un nuevo estudiante
-# # estudiantes["Carlos"] = 88
+# Agregar un nuevo estudiante
+estudiantes["Carlos"] = 88
 
-# # # Calcular el promedio de las calificaciones
-# # promedio = sum(estudiantes.values()) / len(estudiantes)
-# # print(f'Promedio de calificaciones: {promedio:.2f}')
+# Calcular el promedio de las calificaciones
+promedio = sum(estudiantes.values()) / len(estudiantes)
+print(f'Promedio de calificaciones: {promedio:.2f}')
 
-# # # Encontrar el estudiante con la calificación más alta
-# # mejor_estudiante = max(estudiantes, key=estudiantes.get)
-# # print(f'Mejor estudiante: {mejor_estudiante} ({estudiantes[mejor_estudiante]} puntos)')
+#Encontrar el estudiante con la calificación más alta
+mejor_estudiante = max(estudiantes, key=estudiantes.get)
+print(f'Mejor estudiante: {mejor_estudiante} ({estudiantes[mejor_estudiante]} puntos)')
 
 
 
